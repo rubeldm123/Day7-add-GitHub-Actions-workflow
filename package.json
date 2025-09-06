@@ -1,0 +1,23 @@
+{
+  "name": "day1_orangehrm_playwright",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headless": "HEADLESS=1 playwright test",
+    "test:chrome": "playwright test --project='Google Chrome'",
+    "test:chromium": "playwright test --project=chromium",
+    "test:firefox": "playwright test --project=firefox",
+    "test:webkit": "playwright test --project=webkit",
+    "report": "playwright show-report",
+    "codegen": "playwright codegen https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "@types/node": "^24.3.1"
+  }
+}
